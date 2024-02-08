@@ -4,7 +4,16 @@
   "description": "Seamlessly weave concise URLs with this elegant URL shortening solution. Simplify sharing and enhance user experiences effortlessly.",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/index.js",
+    "install": "npm install",
+    "build": "tsc -p .",
+    "lint": "tslint --project . --fix",
+    "format": "prettier --write .",
+    "prepare": "npm run build",
+    "changeset": "changeset",
+    "release": "changeset version",
+    "postrelease": "changeset publish"
   },
   "repository": {
     "type": "git",
